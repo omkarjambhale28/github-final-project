@@ -8,15 +8,15 @@
    # Input:
    # p, principal amount
    # t, time period in years
-   # r, annual rate of interest
+   # roi, annual rate of interest
    # Output:
-   # simple interest = p*t*r
+   # simple interest = p*t*roi
    echo "Enter the principal:"
    read p
    echo "Enter rate of interest per year:"
-   read r
+   read roi
    echo "Enter time period in years:"
    read t
-   s=`expr $p \* $t \* $r / 100`
+   s=`expr $p \* $t \* $roi / 100`
    echo "The simple interest is: "
    echo $s
